@@ -79,14 +79,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BibleVerses.cs" />
     <Compile Include="Connection.cs" />
-    <Compile Include="GetInvertedPositions.cs" />
     <Compile Include="GetSynonymousAPI.cs" />
-    <Compile Include="GetVerseById.cs" />
-    <Compile Include="GetVersesByParams.cs" />
-    <Compile Include="InvertedSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchVerses.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Controller\Controller.csproj">

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "verses3.0\View.csproj", "{B5A08493-34BA-4614-B196-C36404ED1D1F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BC5C091A-66B7-4E7A-9225-4107ED14602E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{71F70E7F-ECE1-4185-9B31-A8B9DFF309F9}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5A08493-34BA-4614-B196-C36404ED1D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5A08493-34BA-4614-B196-C36404ED1D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5A08493-34BA-4614-B196-C36404ED1D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5A08493-34BA-4614-B196-C36404ED1D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC5C091A-66B7-4E7A-9225-4107ED14602E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC5C091A-66B7-4E7A-9225-4107ED14602E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC5C091A-66B7-4E7A-9225-4107ED14602E}.Release|Any CPU.ActiveCfg = Release|Any CPU

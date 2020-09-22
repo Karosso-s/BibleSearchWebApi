@@ -24,7 +24,7 @@ namespace BibleSearchAPI.Controllers
             searchParams.verseInitial = verseInitial;
             searchParams.verseFinal = verseFinal;
 
-            return new GetVersesByParams().getVersesByParams(searchParams);
+            return new BibleVerses().getVersesByParams(searchParams);
         }
 
 

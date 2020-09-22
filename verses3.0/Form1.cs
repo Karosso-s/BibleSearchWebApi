@@ -24,7 +24,7 @@ namespace verses3._0
             string bibleVersion = selectBibleVersion.Text;
             string searchParams = inputSearchParams.Text;
 
-            SearchVerses searchVerses = new SearchVerses();
+            BibleVerses searchVerses = new BibleVerses();
             List<VersesDTO> verses = new List<VersesDTO>();
 
             verses = searchVerses.searchVerses(bibleVersion, searchParams);
@@ -68,7 +68,7 @@ namespace verses3._0
             BibleVersesSearchDTO searchParams_3 = new BibleVersesSearchDTO();
             BibleVersesSearchDTO searchParams_4 = new BibleVersesSearchDTO();
 
-            GetVersesByParams getVersesByParams = new Model.GetVersesByParams();
+            // GetVersesByParams getVersesByParams = new Model.GetVersesByParams();
             List<VersesDTO> versesResultList = new List<VersesDTO>();
 
             searchParams.version = "bible_aa";
@@ -111,7 +111,7 @@ namespace verses3._0
             Console.WriteLine("");
             Console.WriteLine(createSQLCommand.createCommand(searchParams_4));
 
-            versesResultList = getVersesByParams.getVersesByParams(searchParams_4);
+            versesResultList = new BibleVerses().getVersesByParams(searchParams_4);
             foreach (var verse in versesResultList)
             {
                 Console.WriteLine("Livro: " + verse.book);

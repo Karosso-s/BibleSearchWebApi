@@ -17,7 +17,7 @@ namespace BibleSearchAPI.Controllers
     {
         public List<VersesDTO> Get(string bibleVersion, string searchParams)
         {
-            return new SearchVerses().searchVerses(bibleVersion, searchParams);
+            return new BibleVerses().searchVerses(bibleVersion, searchParams);
         }
     }
 }
