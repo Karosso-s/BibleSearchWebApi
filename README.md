@@ -1,15 +1,22 @@
-# BibleSearchWebApi
+# Web-API em C# para o back-end do projeto BibleSearch.
 
-Este projeto serve para fazer buscas de versículos bíblicos. Para isto ele utiliza Elastic Search para buscar versículos que contenham as palavras determinadas na busca.
+Esta WebAPI utiliza C# para desenvolver uma busca parametrizada e outra busca elastica em dois tipos de banco de dados diferentes.
 
 O banco de dados foi desenvolvido em SQL Server e consiste em diferentes versões da bíblia, e para cada versão existe uma lista invertida, com as palavras (acima de 2 caracteres, a fim remover artigos e pronomes) contidas na bíblia e suas respectivas posições.
 
-Para acesso ao banco de dados utilizasse uma web API, desenvolvida em C#, que é capas de retornar duas buscas, uma, a busca por parâmetros, que retorna uma pesquisa por, livro, capitulo e versículo(s), e outra, a busca elástica, que faz a interseção das posições de cada palavra contida na busca.
+Já foram implementados:
 
-Para melhorar o resultado da busca, utilizou-se a dicio-API do ThiagoNelsi (https://github.com/ThiagoNelsi/dicio-api), que retorna vários sinônimos de cada palavra buscada, para melhorar os resultados da busca elástica.
-O front-end está sendo desenvolvido em Angular, e consiste em uma barra de pesquisa para a busca elástica, e uma busca por parâmetros para a busca por livro, capito e versículos.
+1. O algoritmo de busca parametrizada, que busca por livro, capitulo e versiculos.
+2. O algoritmo de busca elástica, que faz a busca do índice dos versículos numa lista invertida e retorna a interseção dos índices como resultado.
+3. A integração com o dicio-API do ThiagoNelsi (https://github.com/ThiagoNelsi/dicio-api), que retorna sinônimos das palavras, que são utilizadas para aumentar a performance da busca elástica.
+4. A web-API para retornar os resultados em Json.
 
-Planos Futuros:
-1 - Desenvolver um dicionario de conjugação verbal
-2 - Desenvolver um dicionario de plurais
-3 - Desenvolver uma aplicação front-end que configure uma imagem com um versiculo para ser comporatilhado entre as redes sociais.
+Serão Implementados:
+
+1. Criação de um banco de dados de sinônimos, para substituir a dicio-API e otimizar a busca elástica.
+2. Criação de um banco de dados de plurais para otimizar a busca elástica.
+3. Criação de um banco de dados de conjugações verbais para otimizar a busca elástica.
+
+----
+
+Repositório aberto a qualquer tipo de sugestões e críticas.
